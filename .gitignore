@@ -1,0 +1,15 @@
+# IDE
+.idea
+.DS_Store
+
+# Development
+node_modules
+yarn*
+dist
+.nyc_output
+.awcache
+*.log
+.yo-rc.json
+.rempl_endpoint_id
+.cache-loader
+.vscode

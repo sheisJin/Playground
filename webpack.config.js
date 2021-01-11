@@ -14,10 +14,6 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.css$/,
-            //     use: ['style-loader', 'css-loader']
-            // },
             {
                 test: /\.png$/,
                 use: [{
@@ -37,15 +33,6 @@ module.exports = {
                     "sass-loader"
                 ],
                 exclude: /node_modules/
-
-                // use: ['style-loader','sass-loader']
-                // use: [{
-                //     loader: 'sass-loader',
-                //     options: {
-                //         // sourceMap: !envConfig.production,
-                //         // outputStyle: "compact"
-                //     }
-                // }]
             }
         ]
     },

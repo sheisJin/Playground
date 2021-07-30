@@ -15,12 +15,17 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(js|jsx)$/,
+                exclude: "/node_modules",
+                use: ["babel-loader"]
+            },
+            {
                 test: /\.png$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        publicPath: '../dist',
-                        name: '[name].[ext]?[hash]'
+                        publicPath: './',
+                        name: '[name].[ext]?[hash]',
                     }
                 }
                 ]
@@ -41,5 +46,10 @@ module.exports = {
             template: './src/index.html'
         }),
         new CleanWebpackPlugin(),
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000,
+      },
 }

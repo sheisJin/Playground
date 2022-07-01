@@ -3,9 +3,7 @@
 .DS_Store
 
 # Development
-/node_modules/*
-node_modules
-/node_modules/
+node_modules/
 yarn*
 dist
 .nyc_output
@@ -15,6 +13,7 @@ dist
 .rempl_endpoint_id
 .cache-loader
 .vscode
+package-lock.json
 .package-lock.json
 
 # Dist

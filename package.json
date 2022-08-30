@@ -23,6 +23,8 @@
     "postcss": "^8.2.4",
     "postcss-filter-mq": "^1.0.1",
     "postcss-loader": "^4.1.0",
+    "primeicons": "^5.0.0",
+    "primereact": "^8.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.53.0",
@@ -32,8 +34,5 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
-  "dependencies": {
-    "primeicons": "^5.0.0",
-    "primereact": "^8.3.0"
-  }
+  "dependencies": {}
 }

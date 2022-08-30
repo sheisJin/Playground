@@ -20,15 +20,14 @@ module.exports = {
                 loader: "babel-loader",
             },
             {
-                test: /\.png$/,
+                test: /\.(png|svg|jpg|gif)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
                         publicPath: './',
                         name: '[name].[ext]?[hash]',
                     }
-                }
-                ]
+                  }]
             },
             {
                 test: /\.scss$/,
@@ -38,7 +37,17 @@ module.exports = {
                     "sass-loader"
                 ],
                 exclude: "/node_modules/"
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [{
+                    loader: 'file-loader',
+                  }],
+            },
         ]
     },
     plugins: [

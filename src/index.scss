@@ -1,0 +1,16 @@
+@import "reset";
+@import "config";
+@import "mixin";
+
+.blind {
+    @include blind();
+}
+
+.h1 {
+    font-size: $G-config-heading-font-size;
+    color: #000;
+
+    @include dart-mode() {
+        color: #fff;
+    }
+}

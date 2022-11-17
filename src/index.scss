@@ -10,7 +10,7 @@
     font-size: $G-config-heading-font-size;
     color: #000;
 
-    @include dart-mode() {
+    @include dark-mode() {
         color: #fff;
     }
 }

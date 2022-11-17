@@ -1,0 +1,6 @@
+// 다크모드 대응
+@mixin dark-mode() {
+    @media (prefers-color-scheme: dark) {
+        @content();
+    }
+}

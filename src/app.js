@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import logo from './images/logo.png';
 import './scss/index.scss';
+import Header from './module/_header';
 
 class App extends Component {
     render() {
         return (
             <div className="wrap">
-                hello world!
+                <Header />
+                <img src={logo}/>
             </div>
         )
     }

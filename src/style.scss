@@ -1,0 +1,41 @@
+@use 'base';
+@use 'mixin';
+@use 'library' with (
+    $box-shadow-background-color: red,
+    $border-radius: 0.1rem
+);
+
+.inverse {
+  background-color: base.$primary-color;
+  color: white;
+}
+
+
+.info {
+    @include mixin.theme;
+}
+.alert {
+    @include mixin.theme($theme: DarkRed);
+}
+.success {
+    @include mixin.theme($theme: DarkGreen);
+}
+
+
+ul, ol {
+    text-align: left;
+
+    & & {
+      padding: {
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+}
+
+$base-color: #fff;
+$border-dark: rgba($base-color, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}

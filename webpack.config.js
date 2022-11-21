@@ -35,7 +35,15 @@ module.exports = {
                 use: [
                     "style-loader",
                     "css-loader",
-                    "sass-loader"
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'), //dart-sass 적용
+                            sassOptions: {
+                                fiber: require('fibers'), //fibers 적용
+                            },
+                        },
+                    },
                 ],
                 exclude: /node_modules/
             }

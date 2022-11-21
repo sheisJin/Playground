@@ -1,0 +1,18 @@
+@use "reset";
+@use "font";
+@use "utils";
+@use "dark-mode";
+
+
+.blind {
+    @include utils.blind();
+}
+
+.h1 {
+    font-size: font.$heading-font-size;
+    color: #000;
+
+    @include dark-mode.dark-mode() {
+        color: #fff;
+    }
+}
